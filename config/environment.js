@@ -2,7 +2,7 @@
 
 module.exports = function (environment) {
   let ENV = {
-    modulePrefix: 'i-mine-site',
+    modulePrefix: 'imine-site',
     environment,
     rootURL: '/',
     locationType: 'auto',

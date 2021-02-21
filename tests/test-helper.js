@@ -1,5 +1,5 @@
-import Application from 'i-mine-site/app';
-import config from 'i-mine-site/config/environment';
+import Application from 'imine-site/app';
+import config from 'imine-site/config/environment';
 import * as QUnit from 'qunit';
 import { setApplication } from '@ember/test-helpers';
 import { setup } from 'qunit-dom';

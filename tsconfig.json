@@ -21,10 +21,10 @@
     "module": "es6",
     "experimentalDecorators": true,
     "paths": {
-      "i-mine-site/tests/*": [
+      "imine-site/tests/*": [
         "tests/*"
       ],
-      "i-mine-site/*": [
+      "imine-site/*": [
         "app/*"
       ],
       "*": [
