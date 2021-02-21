@@ -1,0 +1,72 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(/assets/cluedo/cluedo.png);
+  background-size: cover;
+  background-position: center;
+
+  #splash-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 80%;
+    width: 80%;
+
+    padding: 0 5em;
+
+    background-color: rgba(0, 0, 0, .4);
+
+    img {
+      margin-left: auto;
+      margin-right: auto;
+      flex: 0;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    hr {
+      width: 100%;
+      border-top: solid 1px white;
+    }
+
+    #ip-display {
+      position: relative;
+      cursor: pointer;
+      em {
+        color: #FFAA00;
+      }
+
+      &.clicked::before {
+        position: absolute;
+        opacity: 0;
+        content: "Copied server IP to clipboard";
+        color: red;
+        font-size: 16px;
+        animation-name: copy-popup;
+        animation-timing-function: linear;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes copy-popup {
+        from {
+          top: 0;
+          opacity: 100;
+        }
+        to {
+          top: -100px;
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+

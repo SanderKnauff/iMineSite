@@ -1,0 +1,69 @@
+#roles {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  padding-top: 0;
+
+  .role-description {
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-size: 25em;
+    image-rendering: pixelated;
+
+    @media (orientation: landscape)  {
+      padding: 10em;
+      p {
+        max-width: 50ch;
+      }
+    }
+
+    @media (orientation: portrait)  {
+      padding: 3em 5% 5% 5%;
+      p {
+        max-width: 25ch;
+      }
+    }
+  }
+
+  #detective {
+    background-color: #0D3349;
+    background-position: 25% 25%;
+    clip-path: polygon(0% 100%, 100% 0, 0 0);
+
+    background-image: url("/assets/cluedo/bow.png");
+  }
+
+  #murderer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    background-color: #710909;
+    background-image: url("/assets/cluedo/wooden_sword.png");
+    background-position: 75% 90%;
+    clip-path: polygon(0% 100%, 100% 0, 100% 100%);
+  }
+
+  .weapon-icon {
+    position: absolute;
+    width: 20em;
+    height: 20em;
+
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+
+
+    &.rotate-90 {
+      transform: rotate(270deg);
+    }
+  }
+}
