@@ -7,34 +7,11 @@ header {
   background-size: cover;
   background-position: center;
 
-  #splash-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    height: 80%;
-    width: 80%;
-
-    padding: 0 5em;
-
-    background-color: rgba(0, 0, 0, .4);
-
+  .splash-content {
     img {
       margin-left: auto;
       margin-right: auto;
       flex: 0;
-    }
-
-    div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    hr {
-      width: 100%;
-      border-top: solid 1px white;
     }
 
     #ip-display {

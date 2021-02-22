@@ -6,6 +6,7 @@
 @import "components/scroll-page";
 
 @import "cluedo";
+@import "bingo";
 @import "outlaws";
 
 *, *::before, *::after {
@@ -21,4 +22,29 @@ html, body {
   margin: 0;
   font-family: "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
+}
+
+.splash-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 80%;
+  width: 80%;
+
+  padding: 0 5em;
+
+  background-color: rgba(0, 0, 0, .4);
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  hr {
+    width: 100%;
+    border-top: solid 1px white;
+  }
 }
